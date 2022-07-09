@@ -17,6 +17,7 @@
   --current-color: #212121;
   --footer-primary-color: rgba(255, 255, 255, 0.6);
   --light-gray-backg: #f5f4fa;
+  
 }
 body {
   color: var(--grey-color);
@@ -67,24 +68,51 @@ p {
 .link {
     text-decoration: none;
     color: currentColor 
+
 }
 .active-page {
     color: var(--blue-logo-color);
 }
+.contact-list {
+    margin-left: 331px;
+  }
+
 .list {
     list-style: none;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    
+}
+.contact-list {
+    display: flex;
+    margin-left: auto;
+    
+}
+.nav-menu .nav-item {
+    margin-right: 50px;
 }
 
 .nav-menu.list {
     display: flex;
     color: var(--current-color);
 }
+
+.nav-menu .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    }
+
+    .contact-list .nav-item + .nav-item {
+        margin-left: 50px;
+    }
+
 .nav-menu .link:hover,
 .nav-menu .link:focus {
     color: var(--blue-logo-color);
-}
-.header-contact {
- 
 }
 
 .header-contact .link:hover,
