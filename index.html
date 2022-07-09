@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet"/>
 
     <link rel="stylesheet" href="css/styles.css"/>
     <title>Веб-студия</title>
@@ -13,20 +13,21 @@
 <body>
     <!--шапка сайта-->
     <header class="header">
-        <nav>
+        <nav class="nav">
             <a href="index.html" class="logo">Web<span class="dark-logo">Studio</span></a>
-        <ul class="nav-list list">
-            <li>
-               <a href="index.html" class="active-page link">Студия</a> 
-            </li>
-            <li>
-                <a href="portfolio.html" class="link">Портфолио</a> 
-            </li>
-            <li>
-                <a href="" class="link">Контакты</a> 
-            </li>
-        </ul>
-    </nav>
+    
+            <ul class="nav-menu list">
+              <li>
+                <a href="index.html" class="active-page link">Студия</a>
+              </li>
+              <li>
+                <a href="portfolio.html" class="link">Портфолио</a>
+              </li>
+              <li>
+                <a href="" class="link">Контакты</a>
+              </li>
+            </ul>
+          
         <ul class="header-contact list">
             <li>
                 <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
@@ -35,7 +36,7 @@
                 <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
             </li>
        </ul>
-        
+    </nav>
     </header>
     
     <main>
@@ -49,21 +50,21 @@
 
 <h2>Наши особенности</h2>
 
-<ul class="benefits-list">
+<ul class="list">
 <li class="benefits-item">
-    <h3 class="tytle-tytle">Внимание к деталям</h3>
+    <h3 class="benefits-tytle">Внимание к деталям</h3>
     <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
 </li>
-<li class="link">
-    <h3 class="benefitstytle">Пунктуальность</h3>
+<li class="benefits-item">
+    <h3 class="benefits-tytle">Пунктуальность</h3>
     <p>Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
 </li>
-<li class="link">
-    <h3 class="benefitstytle">Планирование</h3>
+<li class="benefits-item">
+    <h3 class="benefits-tytle">Планирование</h3>
     <p>Равным образом консультация с широким активом в значительной степени обуславливает..</p>
 </li>
-<li class="link">
-    <h3 class="benefitstytle">Современные технологии</h3>
+<li class="benefits-item">
+    <h3 class="benefits-tytle">Современные технологии</h3>
     <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
 </li>
 </ul>
@@ -71,22 +72,22 @@
 
 <!-- Чем занимаемся-->
 <section class="we-do">
-<h2 class="tytle-we-do">Чем мы занимаемся</h2>
+<h2 class="section-tytle">Чем мы занимаемся</h2>
 
 <ul class="list">
-    <li class="link">
+    <li>
         <img src="./images/images1.jpg"
         width="370" 
         height="294" 
         alt="набираем код с макета">
     </li>
-    <li class="link">
+    <li>
         <img src="./images/images2.jpg"
         width="370"
         height="294"
          alt="создаем страницу">
     </li>
-<li class="link">
+<li>
         <img src="./images/images3.jpg" 
         width="370"
         height="294"
@@ -95,39 +96,39 @@
 </ul>
 </section>
 
-<section class="section-others">
-<h2 class="tytle-we-do">Наша команда</h2>
+<section class="team">
+<h2 class="section-tytle">Наша команда</h2>
 <ul class="list">
-    <li class="link">
+    <li>
         <img src="./images/Designer.jpg" 
         alt="Дизайнер продукта" 
         width="270"
         height="260">
-        <h3 class="tytle-team">Игорь Демьяненко</h3>
-        <p class="specialist-team">Product Designer</p>
+        <h3 class="team-tytle">Игорь Демьяненко</h3>
+        <p class="team-specialist">Product Designer</p>
     </li>
-    <li class="link">
+    <li>
         <img src="./images/Developer.jpg" 
         alt="Фронтенд-разработчик" 
         width="270"
         height="260">
-        <h3 class="tytle-team">Ольга Репина</h3>
-        <p class="specialist-team">Frontend Developer</p>
+        <h3 class="team-tytle">Ольга Репина</h3>
+        <p class="team-specialist">Frontend Developer</p>
     </li>
-<li class="link">
+<li>
     <img src="./images/Marketing.jpg"
     alt="Маркетинг" width="270"
     height="260">
-    <h3 class="tytle-team">Николай Тарасов</h3>
-    <p class="specialist-team">Marketing</p>
+    <h3 class="team-tytle">Николай Тарасов</h3>
+    <p class="team-specialist">Marketing</p>
 </li>
-    <li class="link">
+    <li>
         <img src="./images/UIDesigner.jpg"
         alt="Дизайнер пользовательского интерфейса"
          width="270"
         height="260">
-        <h3 class="tytle-team">Михаил Ермаков</h3>
-        <p class="specialist-team">UI Designer</p>
+        <h3 class="team-tytle">Михаил Ермаков</h3>
+        <p class="team-specialist">UI Designer</p>
     </li>
 </ul>
 </section>
