@@ -17,6 +17,9 @@
   --current-color: #212121;
   --footer-primary-color: rgba(255, 255, 255, 0.6);
   --light-gray-backg: #f5f4fa;
+
+
+  --card-set-gap: 30px; 
 }
 body {
   color: var(--grey-color);
@@ -45,7 +48,23 @@ img {
     max-width: 100%;
     height: auto;
   }
-  
+  .link {
+    text-decoration: none;
+    color: currentColor 
+}
+.active-page {
+    color: var(--blue-logo-color);
+}
+.list {
+    list-style: none;
+}
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
 p {
   font-weight: 400;
@@ -55,6 +74,15 @@ p {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  outline: 1px solid var(--background-dark-grey);
+}
+.header-container {
+    display: flex;
+    align-items: center;
+  }
+  .header-contact .link:hover,
+.header-contact .link:focus {
+    color: var(--blue-logo-color);
 }
 
 /* logo */
@@ -74,48 +102,53 @@ p {
     color: var(--white-color);
 }
 
+.section {
+    padding-top: 93px;
+   }
+   
+.header .logo {
+   margin-right: 93px;
+}
 
-
-.link {
-    text-decoration: none;
-    color: currentColor 
-}
-.active-page {
-    color: var(--blue-logo-color);
-}
-.list {
-    list-style: none;
-}
-.container {
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .section {
-    padding-top: 100px;
-    padding-bottom: 100px;
-  }
-
-.nav-menu.list {
-    color: var(--current-color);
-}
-.nav-menu .link:hover,
-.nav-menu .link:focus {
-    color: var(--blue-logo-color);
-}
-.header-container {
+.nav {
     display: flex;
     align-items: center;
+}
+.nav-list {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.contact-list {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-left: auto;
   }
+  
+.nav-link,
+.contact-link {
+    display: flex;
+  align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
 
-.header-contact .link:hover,
-.header-contact .link:focus {
+.nav-link.list {
+    color: var(--current-color);
+}
+.nav-link .link:hover,
+.nav-link .link:focus {
     color: var(--blue-logo-color);
 }
+
+
+
 /* герой */
+
 .hero {
+    padding-top: 200px;
+    padding-bottom: 280px;
     background-color: var(--background-dark-grey);
 }
 .hero-title {
