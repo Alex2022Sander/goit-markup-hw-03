@@ -17,9 +17,8 @@
   --current-color: #212121;
   --footer-primary-color: rgba(255, 255, 255, 0.6);
   --light-gray-backg: #f5f4fa;
-
-
   --card-set-gap: 30px; 
+  --button-shadow: rgba(0, 0, 0, 0.25);
 }
 body {
   color: var(--grey-color);
@@ -172,6 +171,7 @@ p {
     max-width: 696px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 30px;
 }
 
 .hero-button {
@@ -225,7 +225,6 @@ margin-top: calc(-1 * var(--card-set-gap));
 margin-left: calc(-1 * var(--card-set-gap));
 
 }
-
 .card-set > .about-item {
     flex-basis: calc(100% / 4 - var(--card-set-gap));
     margin-left: var(--card-set-gap);
@@ -248,14 +247,29 @@ margin-left: calc(-1 * var(--card-set-gap));
     
   }
 
+  /* картинки и текст */
+
 .section-title {
     font-weight: 700;
     font-size: 36px;
     line-height: 42px;
     text-align: center;
     color: var(--current-color);
+    margin-bottom: 50px;
     
 }
+.card-set > .we-do-item {
+    flex-basis: calc(100% / 3 - var(--card-set-gap));
+    margin-left: var(--card-set-gap);
+    margin-top: var(--card-set-gap);
+}
+
+.card-set > .list-item {
+    flex-basis: calc(100% / 4 - var(--card-set-gap));
+    margin-left: var(--card-set-gap);
+    margin-top: var(--card-set-gap);
+}
+
 .team {
     background-color: var(--light-gray-backg);
 }
@@ -272,6 +286,16 @@ margin-left: calc(-1 * var(--card-set-gap));
   text-align: center;
   
 }
+.team {
+    background-color: var(--light-gray-backg);
+  margin-top: 94px;
+  padding-bottom: 94px
+}
+
+  .team-content{
+      
+  }
+
 
 /* контент портфолио */
 .portfolio-content {
