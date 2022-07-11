@@ -319,7 +319,13 @@ font-weight: 700;
 }
 /* футер */
 .footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: var(--background-dark-grey);
+}
+.footer .logo {
+    margin-bottom: 20px;
+    display: inline-block;
 }
 .address {
     font-style: inherit;
@@ -334,6 +340,9 @@ font-weight: 700;
 .address .link:focus{
     color: var(--blue-logo-color);
 }
+
+/* скрытый заголовок */
+
 .visually-hidden {
     position: absolute;
     white-space: nowrap;
