@@ -66,6 +66,8 @@ img {
     margin-right: auto;
   }
 
+
+
 p {
   font-weight: 400;
   letter-spacing: 0.03em;
@@ -211,25 +213,53 @@ p {
 }
 
 /* Контент и заголовки */
-.benefits-tytle {
+.card-set {
+padding: 0;
+margin: 0;
+list-style: none;
+
+display: flex;
+flex-wrap: wrap;
+
+margin-top: calc(-1 * var(--card-set-gap));
+margin-left: calc(-1 * var(--card-set-gap));
+
+}
+
+.card-set > .about-item {
+    flex-basis: calc(100% / 4 - var(--card-set-gap));
+    margin-left: var(--card-set-gap);
+    margin-top: var(--card-set-gap);
+}
+
+.about-title {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
     color: var(--current-color);
+    margin-bottom: 10px;
+    
 }
+.about-text {
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    line-height: 1.7;
+    
+  }
 
-.section-tytle {
+.section-title {
     font-weight: 700;
     font-size: 36px;
     line-height: 42px;
     text-align: center;
     color: var(--current-color);
+    
 }
 .team {
     background-color: var(--light-gray-backg);
 }
-.team-tytle {
+.team-title {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.2;
@@ -273,4 +303,15 @@ font-weight: 700;
 .address .link:focus{
     color: var(--blue-logo-color);
 }
- 
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(100%);
+    margin: -1px;
+  }
