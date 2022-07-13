@@ -330,6 +330,37 @@ margin-bottom: 20px;
     display: flex;
     justify-content: center;
 }
+/* кнопки портфолио */
+select-list {
+  display: flex;
+  justify-content: center;
+}
+
+.select-list .select-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.list.select-list {
+  margin-bottom: 50px;
+}
+.select-button {
+  cursor: pointer;
+  font-family: inherit;
+  background-color: var(--light-gray-backg);
+  color: var(--color-dark);
+  border: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  border-radius: 4px;
+  padding: 6px 22px;;
+}
+
+.select-button:hover,
+.select-button:focus {
+  background-color: var(--blue-logo-color);
+  color: var(--white-color);
+}
 
 
 /* футер */
