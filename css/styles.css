@@ -194,23 +194,18 @@ border-bottom: 1px solid var(--background-dark-grey);
 }
 
 .hero-button {
-    cursor: pointer;
-    color: var(--white-color);
-    background-color: var(--blue-logo-color);
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.9;
-    font-family: inherit;
-    text-align: center;
-    align-items: center;
-    letter-spacing: 0.06em;
-    border-radius: 4px;
-    box-shadow: 0px 4px 4px 0px var(--button-shadow);
-    padding: 10px 36px;
-
-
-
-
+  cursor: pointer;
+  color: var(--white-color);
+  background-color: var(--blue-logo-color);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px var(--button-shadow);
+  border: none;
+  padding: 10px 32px;
 }
 /* Button */
 .select-button {
