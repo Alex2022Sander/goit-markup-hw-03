@@ -1,4 +1,4 @@
-
+/* цвет фона наша команда #2F303A; */
 /*цвет текста в боди #757575; */
 /*хедер лого Web голубой #2196F3; */
 /* хедер лого Web черный #000000; */
@@ -22,6 +22,9 @@
   --grey-edging: rgba(238, 238, 238, 1);
 --card-item: 4;
 --grey-card-content:#EEEEEE;
+--team-btm: rgba(0, 0, 0, 0.12);
+  --team-bl: rgba(0, 0, 0, 0.14);
+  --team-br: rgba(0, 0, 0, 0.2);
 }
 
 
@@ -171,9 +174,8 @@ border-bottom: 1px solid var(--background-dark-grey);
     display: flex;
     background-color: var(--background-dark-grey);
     padding-top: 200px;
-    padding-bottom: 280px;
+    padding-bottom: 200px;
     text-align: center;
-    margin-top: 0;
 }
 
 
@@ -203,9 +205,9 @@ border-bottom: 1px solid var(--background-dark-grey);
     align-items: center;
     letter-spacing: 0.06em;
     border-radius: 4px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px 0px var(--button-shadow);
     padding: 10px 36px;
-    min-width: 200px;
+
 
 
 
@@ -241,11 +243,7 @@ margin-top: calc(-1 * var(--card-set-gap));
 margin-left: calc(-1 * var(--card-set-gap));
 
 }
-.card-set > .about-item {
-    flex-basis: calc(100% / 4 - var(--card-set-gap));
-    margin-left: var(--card-set-gap);
-    margin-top: var(--card-set-gap);
-}
+
 
 .about-title {
     font-weight: 700;
@@ -268,30 +266,29 @@ margin-left: calc(-1 * var(--card-set-gap));
 .section-title {
     font-weight: 700;
     font-size: 36px;
-    line-height: 42px;
+    line-height: 1.17;
     text-align: center;
     color: var(--current-color);
-    margin-bottom: 50px;
-    
-}
-.card-set > .we-do-item {
-    flex-basis: calc(100% / 3 - var(--card-set-gap));
-    margin-left: var(--card-set-gap);
-    margin-top: var(--card-set-gap);
+    margin-bottom: 50px;   
 }
 
-.card-set > .team-item {
-    flex-basis: calc(100% / 4 - var(--card-set-gap));
-    margin-left: var(--card-set-gap);
-    margin-top: var(--card-set-gap);
-    box-shadow: 0px 4px 4px var(--button-shadow);
-}
+.we-do {
+padding-top: 0;
 
+}
+.we-do-list {
+  --card-item: 3;
+}
 .team {
     background-color: var(--light-gray-backg);
-    margin-top: 93px;
-  padding-bottom: 93px;
 }
+
+.team-item {
+  box-shadow: 0px 1px 3px var(--team-btm), 0px 1px 1px var(--team-bl), 0px 2px 1px var(--team-br);
+border-radius: 0px 0px 4px 4px;
+   }
+
+
 
 .team-specialist,
 .team-title {
