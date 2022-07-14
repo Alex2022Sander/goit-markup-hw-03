@@ -86,7 +86,8 @@ p {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-border-bottom: 1px solid var(--background-dark-grey);
+border-bottom: 1px solid 
+var(--grey-color);
 }
 .header-container {
     display: flex;
@@ -126,7 +127,7 @@ border-bottom: 1px solid var(--background-dark-grey);
 
 .section {
     padding-top: 94px;
-    padding: 94px;
+    padding-bottom: 94px;
 
    }
    
@@ -294,21 +295,22 @@ border-radius: 0px 0px 4px 4px;
 .team-specialist {
   font-weight: 400;
   letter-spacing: 0.03em;
-  margin-top: 10px;
+  
   }
 
 .team-title {
     font-weight: 500;
     letter-spacing: 0.03em;
     color: var(--current-color);
+    margin-bottom: 10px;
   }
 
 .team-content {
     align-items: center;
     background-color: var(--white-color);
-border-radius: 0px 0px 4px 4px;
+
     padding: 30px ;
-    margin: 0;
+   
 }
 
 /* контент портфолио */
@@ -332,11 +334,8 @@ margin-bottom: 4px;
 }
 .card-content {
   padding: 20px 24px;
-  border-top: 0;
-  border-bottom: 1px solid var(--grey-card-content);
-  border-right: 1px solid var(--grey-card-content);
-  border-left: 1px solid var(--grey-card-content);
-
+  border: 1px solid var(--grey-card-content);
+  border-top: none;
 }
 
 .card-item {
@@ -351,27 +350,16 @@ margin-bottom: 4px;
 .select-list {
   display: flex;
   justify-content: center;
-}
-
-.select-list .select-item:not(:last-child) {
-  margin-right: 8px;
-}
-
-.list.select-list {
+  gap: 8px;
   margin-bottom: 50px;
 }
-.select-button {
-  cursor: pointer;
-  font-family: inherit;
-  background-color: var(--light-gray-backg);
-  color: var(--color-dark);
-  border: none;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.6;
-  border-radius: 4px;
-  padding: 6px 22px;;
+
+
+
+.list.select-list {
+  
 }
+
 
 .select-button:hover,
 .select-button:focus {
@@ -382,12 +370,12 @@ margin-bottom: 4px;
 
 /* футер */
 .footer {
-    
+  padding-top: 60px;
+  padding-bottom: 60px;
     background-color: var(--background-dark-grey);
 }
 .footer-container {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  
 
 }
 .footer .logo {
@@ -399,7 +387,9 @@ margin-bottom: 4px;
 }
 
 .address-list {
+  display: flex; 
   gap: 9px;
+  flex-direction: column;
 }
 
 .address-link {
